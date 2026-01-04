@@ -460,10 +460,14 @@ Yes, but...
 ***Data*** and ***evidence*** form the foundation of most decision-making processes.
 
 ##
-### I keep hearing "data" everywhere. What is it?
+### I keep hearing "data" everywhere. What are they?
 
 ::: {style="font-size: 32px"}
 
+<br>
+<br>
+
+- Datum vs. Data   
 - recorded values, whether numbers or labels, together with their context are called data.    
 - are often organized into a data frame  
 
