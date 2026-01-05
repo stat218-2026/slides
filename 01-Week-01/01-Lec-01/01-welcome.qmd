@@ -579,7 +579,9 @@ By the end of this course, I hope to increase your statistical literacy and data
 (1) behavior of chemicals, 
 (2) relationships among living organisms & communities of living organisms, 
 (3) physical processes that sustain most of the living systems and 
-(4) dynamics of human health, through the use of statistics.
+(4) dynamics of human health, 
+
+through the use of statistics.
 
 STAT 218 is tailored for life science students who will inevitably engage with Statistics in their future professions. 
 
