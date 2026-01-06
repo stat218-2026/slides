@@ -107,7 +107,7 @@ I do not want class deadlines to cause you extreme stress or anxiety.
 ##
 ### Investigation 1 Glossary
 
-::: {style="font-size: 32px"}
+::: {style="font-size: 30px"}
 The main terms that we will practice/learn today:
 
 - Data   
@@ -119,7 +119,6 @@ The main terms that we will practice/learn today:
    - Quantitative  
 - Anectodal Evidence vs. Empirical Evidence  
 - Observational Study & Experimental Study   
-- ...
 
 - The link for the investigation 1 is [here](https://docs.google.com/document/d/1fzZPYmPd2kijc6BxFSHu_RdfJK8Y5msx/copy?usp=sharing&ouid=107969602618040380602&rtpof=true&sd=true)
 
