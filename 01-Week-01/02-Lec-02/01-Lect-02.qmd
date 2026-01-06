@@ -1,0 +1,152 @@
+---
+title: "Setting the Scene"
+subtitle: "Introduction to Variables and Types of Evidence"
+author: "STAT 218"
+format:
+  revealjs:
+      theme: simple
+      slide-number: true
+      chalkboard: true
+---
+
+
+
+## Today's Outline 
+
+
+- Late Submission Policy
+
+- Extra Credit
+
+- Lab 0 Instructions
+
+- Investigation 1
+
+
+
+## 
+### Late Submission Policy
+
+::: {style="font-size: 28px"}
+
+I do not want class deadlines to cause you extreme stress or anxiety. 
+
+- I offer 3 “grace days” – days to turn in the assignment late without a penalty."
+
+- These can be used __ONLY__ on weekly assignments, lab assignments and investigation assignments (a single group member must be willing to use one of their grace days for the entire group), but __NOT__ exams or the midterm group project. 
+
+- These “grace days” can be used all at once on a single assignment or used on separate assignments throughout the quarter. Simply add a comment on the assignment in Canvas BEFORE THE DEADLINE.
+
+- After the expiration of your 'grace days,' a 10% grade reduction will be applied for each day that the assignment is overdue. 
+
+- Late submissions __will not be accepted after one week__ from the original due date. 
+
+- __Resubmitting assignments is not allowed.__
+
+:::
+
+
+##
+### Extra Credits - Week 1
+
+<br>
+<br>
+
+- 3 short extra credit opportunities - See Canvas 
+  - Participant Informed Consent 
+  - Curiosity Pre-test 
+  - I wonder #1
+
+
+
+
+# Installing R for STAT 218
+
+##
+### Install R and RStudio
+::: {style="font-size: 32px"}
+
+
+- __Install R:__ Yes, you do need to download and install R even if you have downloaded before. There is a newer version and it is free.
+
+  - <a href = "https://cran.rstudio.com/" target = blank>{{< fa link >}}</a> Link to install R.
+
+- __Install RStudio:__ Yes, you do need to download and install RStudio even if you have downloaded before. There is a newer version. Download the free Desktop version.
+
+  - <a href = "https://posit.co/download/rstudio-desktop/" target = blank>{{< fa link >}}</a> Link to install RStudio Desktop.
+
+- After installation, try the following test and contact if you need help.
+
+:::
+
+## 
+### Is my RStudio working?
+
+::: {style="font-size: 24px"}
+
+{{< video video/test-r.mp4>}}
+
+:::
+
+##
+### If it is not working...
+
+- DO NOT POSTPONE THIS UNTIL THURSDAY  
+
+- In very rare situations, it is not working.
+
+- OR you want to bring your iPad instead of your laptop.
+
+- In these cases, please use the online version of R Studio (again, it is free but you have to sign up with your email address)
+
+   - The link is here <a href = "https://posit.cloud/plans/free" target = blank>{{< fa link >}}</a>
+
+
+
+
+##
+### Investigation 1 Glossary
+
+::: {style="font-size: 32px"}
+The main terms that we will practice/learn today:
+
+- Data   
+- Data Frame  
+- Observational Unit (case, study subject)   
+- Variable  
+   - Categorical 
+      - Binary (if it has 2 sub-groups)  
+   - Quantitative  
+- Anectodal Evidence vs. Empirical Evidence  
+- Observational Study & Experimental Study   
+- ...
+
+- The link for the investigation 1 is [here](https://docs.google.com/document/d/1fzZPYmPd2kijc6BxFSHu_RdfJK8Y5msx/copy?usp=sharing&ouid=107969602618040380602&rtpof=true&sd=true)
+
+:::
+
+##
+### Cooperative Learning in This Class
+::: {style="font-size: 28px"}
+
+__1. Jigsaw__
+
+- Each student prepares one part
+
+- Teaches it to the group and learns all parts
+
+- Works only if everyone understands the whole task
+
+__2. Think–Discuss–Answer__
+
+- The group discusses every question together before answering
+
+- Builds shared reasoning and good group habits
+
+⚠️ __Reminder:__ Cooperative learning ≠ splitting the work.
+
+You must discuss, check, and understand each other’s answers.
+
+We may use different formats during the semester,
+but Think–Discuss–Answer will be used in the first weeks.
+:::
