@@ -1,0 +1,71 @@
+---
+title: "Chapter 2: Description of Samples and Populations"
+subtitle: "STAT 218"
+format: 
+  revealjs:
+      theme: simple
+      slide-number: true
+      chalkboard: true
+      incremental: true
+---
+
+## 
+### Let's Refresh Our Memory
+
+::: {style="font-size: 30px"}
+
+This week, we...  
+
+- described several sampling methods 
+- had an introduction to descriptive statistics
+  - constructed frequency distributions enabling us to summarize __a categorical variable__ or __a quantitative variable__ either as a table or a graph. 
+  - identified the shape of a distribution.
+  - compared the mean and median as measures of center.
+  - had an introduction to measures of variability with the emphasis on the standard deviation.
+
+And yesterday we used R to...
+
+- become familiar with a data set   
+- create a frequency distribution table and a bar chart for categorical data.
+
+:::
+
+
+## 
+### What about Today?
+
+<br>
+
+Today we will use the Rossman & Chance Applet Collection to review and apply concepts related to the shape, center, and dispersion of a distribution. 
+
+<br>
+
+In particular, the last 4–5 questions in the investigation will help prepare you for next week’s topics.
+
+##
+### Cooperative Learning in This Class
+::: {style="font-size: 28px"}
+:::{.nonincremental}
+
+
+__1. Think–Discuss–Answer (Highly Recommended)__
+
+- The group discusses every question together before answering
+
+- Builds shared reasoning and good group habits
+
+
+__2. Jigsaw__
+
+- Each student prepares one part
+
+- Teaches it to the group and learns all parts
+
+- Works only if everyone understands the whole task
+
+⚠️ __Reminder:__ Cooperative learning ≠ splitting the work.
+
+You must discuss, check, and understand each other’s answers.
+
+:::
+:::

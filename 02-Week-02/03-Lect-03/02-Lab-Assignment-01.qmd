@@ -1,7 +1,7 @@
 ---
 title: "STAT 218 Lab Assignment 1"
 author: 
-  - "Team Member 1: NAME HERE"
+  - "Team Member 1: NAME HERE
   - "Team Member 2: NAME HERE"
   - "Team Member 3: NAME HERE"
 format: pdf
@@ -30,7 +30,8 @@ data("penguins")
 
 ```{r}
 
-# Delete this sentence and add your R Code here. 
+library(tidyverse)
+library(openintro)
 
 ```
 
