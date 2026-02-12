@@ -27,6 +27,72 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="01-Lect-04_files/libs/revealjs/dist/theme/quarto-0fde88a82f0356838740f155f1088782.css">
   <link href="01-Lect-04_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -224,11 +290,13 @@ H_A: \mu_1 \neq \mu_2
 H_0: \mu_1 = \mu_2
 \]</span></p>
 <p>which asserts that <span class="math inline">\(\mu_1\)</span> and <span class="math inline">\(\mu_2\)</span> are equal. A researcher would usually express these hypotheses more informally and we can trace those hypotheses from the examples, problems and exercises in this course.</p>
+<div class="fragment">
 <p>Alternatively we can express these hypotheses as following:</p>
 <p><span class="math display">\[
 \\H_0: \mu_1 - \mu_2 = 0
 \\H_A: \mu_1 - \mu_2 \neq 0
 \]</span></p>
+</div>
 </div>
 </section>
 <section id="section-4" class="slide level2">
@@ -239,44 +307,58 @@ H_0: \mu_1 = \mu_2
 <ul>
 <li>Test statistic is a measure of how far the difference between the sample means (<span class="math inline">\(\bar{y}\)</span>’s) is from the difference we would expect to see if <span class="math inline">\(H_0\)</span> were true (zero difference), <strong>the amount of variation we expect to see</strong> in differences of means from random samples.</li>
 </ul>
+<div class="fragment">
 <p><span class="math display">\[
 test \ statistic = \frac{(\bar{y}_1 - \bar{y}_2) - (\mu_1 - \mu_2)}{SE(\bar{y}_1 - \bar{y}_2)}
 \]</span></p>
+</div>
 </div>
 </section>
 <section id="section-5" class="slide level2">
 <h2></h2>
 <h3 id="what-is-standard-error">What is Standard Error?</h3>
 <div style="font-size: 24px">
+<div class="fragment">
 <p>The formula that we have used so far is</p>
 <p><span class="math display">\[
 SE_{\bar{Y}} = \frac{s}{\sqrt{n}}
 \]</span></p>
+</div>
 <ul>
 <li><p>Naturally, we can say that taking the difference between two sample means is an estimate of the quantity (<span class="math inline">\(\mu_1\)</span> - <span class="math inline">\(\mu_2\)</span>).</p></li>
 <li><p>However, the formula for the standard error of the difference (<span class="math inline">\(\bar{Y}_1\)</span> - <span class="math inline">\(\bar{Y}_2\)</span>) is a little different from what we initially thought.</p></li>
 </ul>
+<div class="fragment">
 <p><span class="math display">\[
 SE_{\bar{Y}_1 - \bar{Y}_2} = \sqrt{SE_1^2 + SE_2^2}
 \]</span></p>
+</div>
+<div class="fragment">
 <p><span class="math display">\[
 SE_{\bar{Y}_1 - \bar{Y}_2} = \sqrt{ \frac {s_1^2}{n_1} + \frac {s_2^2}{n_2}}
 \]</span></p>
+</div>
+<div class="fragment">
 <p><span class="math display">\[
 SE_{\bar{Y}_1 - \bar{Y}_2} = \sqrt{ \frac {4.8^2}{8} + \frac {4.7^2}{7}} = 2.46
 \]</span></p>
+</div>
 </div>
 </section>
 <section id="section-6" class="slide level2">
 <h2></h2>
 <h3 id="calculate-test-statistic-1">Calculate test statistic</h3>
 <p><br></p>
+<div class="fragment">
 <p><span class="math display">\[
 test \ statistic = \frac{(\bar{y}_1 - \bar{y}_2) - (\mu_1 - \mu_2)}{SE(\bar{y}_1 - \bar{y}_2)}
 \]</span></p>
+</div>
+<div class="fragment">
 <p><span class="math display">\[
 \frac{(15.9 - 11.0) - (0)}{2.46} = 1.99
 \]</span></p>
+</div>
 </section>
 <section id="section-7" class="slide level2">
 <h2></h2>
@@ -287,33 +369,45 @@ test \ statistic = \frac{(\bar{y}_1 - \bar{y}_2) - (\mu_1 - \mu_2)}{SE(\bar{y}_1
 \]</span></p>
 <p><br></p>
 <p>Let’s revise our 95% confidence interval formula for comparing two means.</p>
+<div class="fragment">
 <p><span class="math display">\[
 \\95 \% \ CI = (\bar{y_1}-\bar{y_2}) \pm \ multiplier \times SE_{\bar{Y}_1 - \bar{Y}_2}
 \]</span></p>
+</div>
 </div>
 </section>
 <section id="confidence-interval-for-mu_1---mu_2-1" class="slide level2">
 <h2>Confidence Interval for (<span class="math inline">\(\mu_1\)</span> - <span class="math inline">\(\mu_2\)</span>)</h2>
 <div style="font-size: 28px">
 <p>multiplier is 2.164 for this question.</p>
+<div class="fragment">
 <p><span class="math display">\[
 \\95 \% \ CI = (\bar{y_1}-\bar{y_2}) \pm \ multiplier \times SE_{\bar{Y}_1 - \bar{Y}_2}
 \]</span></p>
+</div>
+<div class="fragment">
 <p><span class="math display">\[
 \\95 \% \ CI = (15.9 - 11) \pm \ 2.164 \times 2.46
 \\ 4.9 \pm 5.32
 \]</span></p>
+</div>
 <ul>
 <li><p>In our hypothetical example, we calculated 95% CI and we found it as (-0.42,10.22)</p>
 <ul>
-<li>We are 95% confident that the population average 14-day height of fast plants when water is used (<span class="math inline">\(\mu_1\)</span>) is between 0.4 cm lower and 10.2 cm higher than the average</li>
+<li>We are 95% confident that the population average 14-day height of fast plants when water is used (<span class="math inline">\(\mu_1\)</span>) is between 0.4 cm lower and 10.2 cm higher than the average when ancy is used.</li>
 </ul></li>
 </ul>
 </div>
 </section>
 <section id="r-please-save-me" class="slide level2">
 <h2>R, Please Save Me!</h2>
+<p><br></p>
 <div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href=""></a><span class="fu">t_test</span>(<span class="at">x =</span> mydata, </span>
+<span id="cb1-2"><a href=""></a>       <span class="at">formula =</span> Height <span class="sc">~</span> Treatment, </span>
+<span id="cb1-3"><a href=""></a>       <span class="at">order =</span> <span class="fu">c</span>(<span class="st">"Control"</span>, <span class="st">"Ancy"</span>),</span>
+<span id="cb1-4"><a href=""></a>       <span class="at">alternative =</span> <span class="st">"two-sided"</span>,</span>
+<span id="cb1-5"><a href=""></a>       <span class="at">var.equal =</span> <span class="cn">FALSE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1 × 7
   statistic  t_df p_value alternative estimate lower_ci upper_ci
@@ -330,8 +424,10 @@ test \ statistic = \frac{(\bar{y}_1 - \bar{y}_2) - (\mu_1 - \mu_2)}{SE(\bar{y}_1
 <h2></h2>
 <h3 id="draw-conclusion">Draw Conclusion</h3>
 <p><br></p>
+<div class="fragment">
 <p><strong>Conclusion:</strong> We have moderate evidence against the null hypothesis. Our confidence interval includes 0.</p>
 <p>That is, the data do not provide strong evidence that Ancymidol suppresses plant growth.</p>
+</div>
 </section>
 <section id="but" class="slide level2">
 <h2>But…</h2>
@@ -343,7 +439,9 @@ test \ statistic = \frac{(\bar{y}_1 - \bar{y}_2) - (\mu_1 - \mu_2)}{SE(\bar{y}_1
 <li>We are 95% confident that the population average 14-day height of fast plants when water is used (<span class="math inline">\(\mu_1\)</span>) is between 0.4 cm lower and 10.2 cm higher than the average 14-day height of fast plants when <a href="https://www3.epa.gov/pesticides/chem_search/reg_actions/reregistration/fs_PC-108601_1-Jun-95.pdf">Ancymidol</a> is used (<span class="math inline">\(\mu_2\)</span>).</li>
 </ul></li>
 </ul>
+<div class="fragment">
 <p>Is it reasonable to believe that the substance may affect plant growth? Discuss with your neighbor</p>
+</div>
 <ul>
 <li><a href="https://academic.oup.com/plphys/article/57/4/640/6074930">A paper on Effects of Ancymidol from 1976</a></li>
 <li><a href="https://pubchem.ncbi.nlm.nih.gov/compound/Ancymidol">National Library of Medicine</a></li>
@@ -405,25 +503,27 @@ test \ statistic = \frac{(\bar{y}_1 - \bar{y}_2) - (\mu_1 - \mu_2)}{SE(\bar{y}_1
 </div>
 </div>
 </div>
+<div class="fragment">
 <ul>
-<li>Claiming that data provide evidence that significantly supports <span class="math inline">\(H_A\)</span> when <span class="math inline">\(H_0\)</span> is true is called a Type I error.</li>
-<li>In choosing (<span class="math inline">\(\alpha\)</span>), we are choosing our level of protection against Type I error.
+<li class="fragment">Claiming that data provide evidence that significantly supports <span class="math inline">\(H_A\)</span> when <span class="math inline">\(H_0\)</span> is true is called a Type I error.</li>
+<li class="fragment">In choosing (<span class="math inline">\(\alpha\)</span>), we are choosing our level of protection against Type I error.
 <ul>
-<li>Many researchers regard 5% as an acceptably small risk.
+<li class="fragment">Many researchers regard 5% as an acceptably small risk.
 <ul>
-<li>If we do not regard 5% as small enough, we might choose to use a more conservative value of a such as a = 0.01; in this case the percentage of true null hypotheses that we reject would be not 5% but 1%.</li>
+<li class="fragment">If we do not regard 5% as small enough, we might choose to use a more conservative value of a such as a = 0.01; in this case the percentage of true null hypotheses that we reject would be not 5% but 1%.</li>
 </ul></li>
 </ul></li>
-<li>In practice, the choice of a may depend on the context of the particular experiment.
+<li class="fragment">In practice, the choice of a may depend on the context of the particular experiment.
 <ul>
-<li>A regulatory agency might demand more exacting proof of efficacy for a toxic drug than for a relatively innocuous one.</li>
+<li class="fragment">A regulatory agency might demand more exacting proof of efficacy for a toxic drug than for a relatively innocuous one.</li>
 </ul></li>
-<li>Also, a person’s choice of (<span class="math inline">\(\alpha\)</span>) may be influenced by his or her prior opinion about the phenomenon under study.
+<li class="fragment">Also, a person’s choice of (<span class="math inline">\(\alpha\)</span>) may be influenced by his or her prior opinion about the phenomenon under study.
 <ul>
-<li>Suppose an agronomist is skeptical of claims for a certain soil treatment; in evaluating a new study of the treatment, he might express his skepticism by choosing a very conservative significance level (say, (<span class="math inline">\(\alpha\)</span>) = 0.001), thus indicating that it would take a lot of evidence to convince him that the treatment is effective.</li>
-<li>For this reason, written reports of an investigation should include a <span class="math inline">\(P\)</span>-value so that each reader is free to choose his or her own value of a in evaluating the reported results.</li>
+<li class="fragment">Suppose an agronomist is skeptical of claims for a certain soil treatment; in evaluating a new study of the treatment, he might express his skepticism by choosing a very conservative significance level (say, (<span class="math inline">\(\alpha\)</span>) = 0.001), thus indicating that it would take a lot of evidence to convince him that the treatment is effective.</li>
+<li class="fragment">For this reason, written reports of an investigation should include a <span class="math inline">\(P\)</span>-value so that each reader is free to choose his or her own value of a in evaluating the reported results.</li>
 </ul></li>
 </ul>
+</div>
 </div>
 </section>
 <section id="type-i-error-vs-type-ii-error" class="slide level2">
@@ -439,8 +539,10 @@ test \ statistic = \frac{(\bar{y}_1 - \bar{y}_2) - (\mu_1 - \mu_2)}{SE(\bar{y}_1
 <section id="type-i-error-vs-type-ii-error-1" class="slide level2">
 <h2>Type I Error vs Type II Error</h2>
 
-<img data-src="img\type-1-2-caps.png" class="quarto-figure quarto-figure-center r-stretch" width="300"><div style="font-size: 14px">
+<img data-src="img\type-1-2-caps.png" class="quarto-figure quarto-figure-center r-stretch" width="300"><div class="fragment">
+<div style="font-size: 14px">
 <p>From <a href="https://www.amazon.com/gp/product/0521142466/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0521142466&amp;linkCode=as2&amp;tag=allaboutforen-20&amp;linkId=7ad02ab63fa078ea0f478f4505fd6417">Essential Guide to Effect Sizes</a> by Paul D. Ellis (2010)</p>
+</div>
 </div>
 
 </section></section>
