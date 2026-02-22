@@ -1,5 +1,5 @@
 ---
-title: "Midterm 2 Instructions and Datasets"
+title: "Midterm 2 Instructions"
 format: html
 toc: true
 ---
