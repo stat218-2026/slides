@@ -8,8 +8,7 @@ author:
 date: today
 date-format: "MMMM D[<sup style='font-size:65%;'>th</sup>], YYYY"
 format: pdf
-execute:
-  echo: true
+editor: visual
 ---
 
 ## Lab Assignment 3

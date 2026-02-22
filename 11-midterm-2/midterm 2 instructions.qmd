@@ -1,0 +1,115 @@
+---
+title: "Midterm 2 Instructions and Datasets"
+format: html
+toc: true
+---
+
+# Midterm 2 Instructions
+
+Midterm 2 consists of **two parts**:
+
+1.  **Take-Home Data Analysis (Preparation Component)**
+2.  **In-Class Exam (Application Component)**
+
+Both components are required.
+
+------------------------------------------------------------------------
+
+# Part 1: Take-Home Data Analysis
+
+## Objective
+
+You will examine and analyze the provided dataset using the statistical methods covered in class. This portion assesses your ability to conduct appropriate analyses and generate correct outputs.
+
+## Collaboration Policy
+
+-   You may work together with classmates **ONLY FOR THE TAKE-HOME PORTION** of the exam.
+-   The **in-class exam is in-person and individual.**
+
+Each student must fully understand the work and be prepared to independently explain, justify, and interpret their results during the in-class exam.
+
+## Use of AI Tools
+
+You **do not need to use AI tools** for this assignment.
+
+All required code is already available in:
+
+-   Lab assignments
+
+-   Lab slides
+
+-   Investigation assignments
+
+These materials contain everything you need.
+
+You **may use AI tools only if you clearly understand the code AI generates.**
+
+You are responsible for:
+
+-   Ensuring the code is correct
+
+-   Being able to explain the results during the in-class portion
+
+If you cannot explain your results, it may negatively affect your in-class performance.
+
+## Software Guidelines
+
+You will use **both R and the applet** for this exam.
+
+### Use **R** for:
+
+-   Data visualization
+-   Data exploration
+-   One-sample t-test (optional — may also use applet)
+-   Independent samples t-test (optional — may also use applet)
+-   Paired samples t-test (optional — may also use applet)
+
+### Use the **Applet** for:
+
+-   Two proportions z-test
+
+If **R is not working on your computer**, you may use the applet instead for every item.
+
+## Required Analyses
+
+You must complete the following (as applicable to the dataset):
+
+-   Data visualization
+-   Data exploration
+-   One-sample t-test
+-   Independent samples t-test
+-   Paired samples t-test
+-   Two proportions z-test
+
+## Deliverables (Bring to Class)
+
+You must bring:
+
+-   Printed outputs (graphs, tables, test results, etc.)
+-   Your R code (if you used R)
+-   Any relevant summaries or notes
+-   Your interpretations of results
+
+Failure to bring your outputs will significantly limit your ability to complete the in-class portion.
+
+------------------------------------------------------------------------
+
+# Part 2: In-Class Exam
+
+## Objective
+
+During class, you will use your take-home outputs to answer questions.
+
+You will be expected to:
+
+-   Interpret statistical results
+-   State hypotheses correctly
+-   Explain conclusions in context
+-   Justify methodological choices
+-   Discuss assumptions and limitations
+
+You must be able to explain the analysis you conducted.
+
+# Academic Integrity
+
+Although collaboration is allowed for the take-home portion, each student must fully understand their work. You are responsible for being able to explain your analyses and conclusions independently during the in-class exam.
