@@ -6,12 +6,12 @@
 <script src="01-Lect-02_files/libs/quarto-html/tippy.umd.min.js"></script>
 <link href="01-Lect-02_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="01-Lect-02_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="01-Lect-02_files/libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="01-Lect-02_files/libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="01-Lect-02_files/libs/quarto-contrib/videojs/video.min.js"></script>
 <link href="01-Lect-02_files/libs/quarto-contrib/videojs/video-js.css" rel="stylesheet">
 <link href="01-Lect-02_files/libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="01-Lect-02_files/libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.7.32">
+  <meta name="generator" content="quarto-1.8.25">
 
   <meta name="author" content="STAT 218">
   <title>Setting the Scene</title>
@@ -33,7 +33,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="01-Lect-02_files/libs/revealjs/dist/theme/quarto-2c1b5f745a11cfad616ebade4a4a7d24.css">
+  <link rel="stylesheet" href="01-Lect-02_files/libs/revealjs/dist/theme/quarto-0fde88a82f0356838740f155f1088782.css">
   <link href="01-Lect-02_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="01-Lect-02_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="01-Lect-02_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -215,7 +215,7 @@ STAT 218
 <h2></h2>
 <h3 id="if-it-is-not-working">If it is not working…</h3>
 <ul>
-<li><p>DO NOT POSTPONE THIS UNTIL THURSDAY</p></li>
+<li><p>DO NOT POSTPONE THIS UNTIL FRIDAY</p></li>
 <li><p>In very rare situations, it is not working.</p></li>
 <li><p>OR you want to bring your iPad instead of your laptop.</p></li>
 <li><p>In these cases, please use the online version of R Studio (again, it is free but you have to sign up with your email address)</p>
@@ -465,7 +465,7 @@ STAT 218
         margin: 0.1,
 
         math: {
-          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
           config: 'TeX-AMS_HTML-full',
           tex2jax: {
             inlineMath: [['\\(','\\)']],
@@ -539,13 +539,14 @@ STAT 218
           e.clearSelection();
         }
         const getTextToCopy = function(trigger) {
-            const codeEl = trigger.previousElementSibling.cloneNode(true);
-            for (const childEl of codeEl.children) {
-              if (isCodeAnnotation(childEl)) {
-                childEl.remove();
-              }
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
             }
-            return codeEl.innerText;
+          }
+          return codeEl.innerText;
         }
         const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
           text: getTextToCopy
