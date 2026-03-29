@@ -9,20 +9,18 @@ format:
 ---
 
 
-##
+## Merhaba!
 
-:::: {.columns}
-::: {.column width="55%"}
-::: {style="text-align: center"}
 
-**Instructor** 
+::: {style="font-size: 28px; text-align: center"}
+
+
 
 ```{=html}
 <img src="img/sinem.jpeg" alt="A headshot of a woman with curly, short, shoulder-length hair with green eyes."
   style="width: 200px; height: 200px; border-radius: 100%; margin-top: 5px; border: 1px solid whitesmoke; padding: 5px;">
 ```
 
-::: {style="text-align: left"}
 
 <h1 style="font-size: 28px; margin-top: 20px;line-height: 0.5;">
 [{{< fa volume-high >}}](audio/how-to-pronounce-my-name.mp3) Dr. Sinem Demirci (she/her)
@@ -36,38 +34,15 @@ format:
 {{< fa envelope >}} <a href = "mailto:sdemirci@calpoly.edu" style="font-size: 28px; line-height: 0.5;">sdemirci@calpoly.edu</a>
 </h1>
 
-::: {style="font-size: 30px; text-align: left"}
 
 **Instructor's office hours:**  
-**Mon - Thu:** 11:10 AM - 12:00 PM _(In-Office)_    
- 
+___Tue:___ 01:10 PM - 02:50 PM _(In-Office)_  
+___Wed:___ 11:10 AM - 12:00 PM _(In-Office)_  
+___Thu:___ 01:10 PM - 02:00 PM _(In-Office)_   
 :::
 
-:::
-:::
-:::
-
-::: {.column width="45%"}
-::: {style="text-align: center"}
 
 
-**Grader**
-
-<br>   
-<br>   
-
-::: {style="text-align: center"}
-<h1 style="font-size: 30px; margin-top: 20px;line-height: 0.5;">Eden A. Smith</h1>
-
-<h1 style="font-size: 28px; margin-top: 20px;line-height: 0.5;">
-{{< fa envelope >}} <a href = "mailto:esmit169@calpoly.edu" style="font-size: 28px; line-height: 0.5;">esmit169@calpoly.edu</a>
-</h1>
-
-
-:::
-:::
-:::
-::::
 
 
 
@@ -93,10 +68,20 @@ In this lecture, I will be briefly talking about
 ### Course Website and Syllabus
 
 <br>     
-<br>    
 
 We have a course [website](https://stat218-2026.github.io/website/) to organize and manage our course materials.
 
+<br>    
+
+::: {.callout-tip}
+
+<br>
+
+***Please refresh the page each time you open the website to ensure you are viewing the most up-to-date version.***
+
+<br>
+
+:::
 
 ## 
 ### Schedule
@@ -152,7 +137,7 @@ We have a course [website](https://stat218-2026.github.io/website/) to organize 
 
 ::: {style="font-size: 32px"}
 
-- There will be 'Investigation Sessions' **every Tuesday** to be completed (hopefully) within classroom time. 
+- There will be 'Investigation Sessions' **every Wednesday** to be completed (hopefully) within classroom time. 
 
 - You are encouraged to work in groups on these assignments. **Each group should be composed of 2-3 students** to work and complete them together both in the class and/or after the class.
 
@@ -161,7 +146,7 @@ We have a course [website](https://stat218-2026.github.io/website/) to organize 
   - focus more on a key statistical concept. 
   - be turned in one write-up with all of your names. 
   
-- All investigation assignments are due **Thursdays by 11:59 pm**.
+- All investigation assignments are due **Fridays by 11:59 pm**.
 
 - You may work either the same group members or shuffle around.
 
@@ -172,11 +157,11 @@ We have a course [website](https://stat218-2026.github.io/website/) to organize 
 
 ::: {style="font-size: 32px"}
 
-- There will be 'Lab Sessions' **every Thursday** to be completed (hopefully) within classroom time.  
+- There will be 'Lab Sessions' on **Fridays** to be completed (hopefully) within classroom time.  
   - Lab sessions will be conducted in groups, and the lab assignments will also be group projects.  
   - **Each group is composed of 2-3 students** to work and complete the labs together both in the class and/or after the class.
 
-- All lab assignments are due **Mondays by 11:59 pm**.
+- All lab assignments are due **Tuesdays by 11:59 pm**.
 
 - You may work either the same group members or shuffle around.
 
@@ -189,9 +174,9 @@ We have a course [website](https://stat218-2026.github.io/website/) to organize 
 
 <br>
 
-- **Monday & Wednesday:** Lecture-based approach
+- **Tuesday & Thursday:** Lecture-based approach
 
-- **Tuesday & Thursday:** Learn-by-doing approach
+- **Wednesday & Friday:** Learn-by-doing approach
 
 
 ## 
@@ -278,10 +263,12 @@ I usually respond within 48 hours. If you haven't heard back...
 ::: {style="font-size: 32px"}
 
 - Study daily.
+  - The feeling of learning does not guarantee retention. 
+    - Even if everything felt crystal clear that day, studies show that it is temporary. Don’t let it mislead you.
 - Read the materials before coming to the lecture.
   - It’s normal—part of the learning process—not to understand every single sentence.
 - Ask questions!
-- Come to my office hours (coffee and chocolate might be available).
+- Come to my office hours (chocolate might be available).
 
 :::
 
@@ -338,7 +325,7 @@ I usually respond within 48 hours. If you haven't heard back...
 - Nope! But during the quarter...
 
   - I offer extra credit opportunities.
-  - I might curve grades if the class average is too low (never happened in STAT 218).
+  - I might curve grades if the class average is too low.
 
 :::
 
@@ -380,6 +367,8 @@ I usually respond within 48 hours. If you haven't heard back...
 ##
 ### Do we have to shuffle our groups every week?
 
+<br>
+
 ::: {style="font-size: 32px"}
 
 No, but...
@@ -397,6 +386,9 @@ If you’re happy with your group, feel free to stick together for all investiga
 
 ##
 ### Can I work individually?
+
+<br>
+
 
 ::: {style="font-size: 32px"}
 
@@ -469,7 +461,7 @@ Yes, but...
 
 - Datum vs. Data   
 - recorded values, whether numbers or labels, together with their context are called data.    
-- are often organized into a data frame  
+- are often organized into a ***data frame***  
 
 :::
 
@@ -478,21 +470,10 @@ Yes, but...
 
 ![](img/data.png){fig-align="center"} 
 
-## Data Sources
-
-Data can be obtained:
-
-- Through research
-  - Experiments 
-  - Observational studies 
-  - …
-
-- From information collected by public or private agencies
-
-- From online sources (e.g., websites, databases)
 
 
-## Observational Unit    
+## 
+### What is an Observational Unit?    
 
 <br>
 <br>
@@ -501,7 +482,8 @@ Data can be obtained:
 - Case, study subject, experimental unit are other names for it.
 
 
-## Variable  
+## 
+### What is a "Variable"?  
 
 <br>
 <br>
@@ -536,6 +518,19 @@ Data can be obtained:
 
 ![](img/3.png){fig-align="center"}
 
+## 
+### What Are the Data Sources?
+
+Data can be obtained:
+
+- Through research
+  - Experiments 
+  - Observational studies 
+  - …
+
+- From information collected by public or private agencies
+
+- From online sources (e.g., websites, databases)
 
 ## But...
 
@@ -545,7 +540,9 @@ Data can be obtained:
 Data alone can’t make good decisions. We need a solid approach.
 
 ##
-### You said "evidence" somewhere?
+### You said "evidence" somewhere? 👀
+
+<br>
 
 **Example:** A man on the news got mercury poisoning from eating swordfish, so the average mercury concentration in swordfish must be dangerously high.
 
@@ -555,16 +552,21 @@ Data alone can’t make good decisions. We need a solid approach.
 
 ##
 ### What is Empirical Evidence?
-::: {style="font-size: 28px"}
+
+<br>
+
+::: {style="font-size: 30px"}
 
 - In applied statistics, analyses are typically based on **empirical evidence!**
 
-To get that, one must collect data from scientific studies such as 
+- To get that, one must collect data from scientific studies such as 
 
-- **Observational study:** We merely observe things about our sample.
-- **Randomized experiment:** We randomly assign people to one of two groups (variable manipulation). 
-- **Survey:** We typically use to either to characterize a group or to assess opinions or reactions, e.g., political polling, for a particular group of individuals.
-- And many more complicated studies within and beyond the scope of statistics (meta-analysis, qualitative research methodologies etc)...
+  - Observational study 
+  - Randomized experiment 
+  - Survey 
+  - And many more complicated studies within and beyond the scope of statistics (meta-analysis, qualitative research methodologies etc)...
+
+We'll describe them later this week.
 :::
 
 ##
@@ -572,18 +574,14 @@ To get that, one must collect data from scientific studies such as
 
 <br>
 
-::: {style="font-size: 28px"}
+::: {style="font-size: 30px"}
 
-By the end of this course, I hope to increase your statistical literacy and data literacy. In the best-case scenario, I will support you in decision- making process and making sense of uncertainty in the 
+- By the end of this course, I hope to increase your statistical literacy and data literacy. In the best-case scenario, I will support you in decision- making process and making sense of uncertainty through the use of statistics.
 
-(1) behavior of chemicals, 
-(2) relationships among living organisms & communities of living organisms, 
-(3) physical processes that sustain most of the living systems and 
-(4) dynamics of human health, 
+<br>
 
-through the use of statistics.
 
-STAT 218 is tailored for life science students who will inevitably engage with Statistics in their future professions. 
+- STAT 218 is tailored for life science students who will inevitably engage with Statistics in their future professions. 
 
 :::
 
