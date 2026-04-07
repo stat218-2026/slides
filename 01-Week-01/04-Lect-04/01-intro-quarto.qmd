@@ -1,6 +1,6 @@
 ---
 title: "Introduction to R & RStudio"
-subtitle: "Week 1 - Lecture 4 & Lab 0"
+subtitle: "Lab 0"
 format: 
   revealjs:
       theme: simple
@@ -40,16 +40,15 @@ In this lecture, we will...
 
 
 
-<a title="Hadley Wickham and others at RStudio, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:R_logo.svg"><img width="256" alt="R logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/512px-R_logo.svg.png"></a>  
+<a title="The R Foundation, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:R_logo.svg"><img width="330" alt="Logo for R" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/330px-R_logo.svg.png"></a>
 
-
-<a href="https://commons.wikimedia.org/wiki/File:R_logo.svg">Hadley Wickham and others at RStudio</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons
-
+<a href="https://commons.wikimedia.org/wiki/File:R_logo.svg">The R Foundation</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons
 <br/><br/>
 <br/><br/>
 
 
-<a title="RStudio, Inc., Public domain, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:RStudio_logo_flat.svg"><img width="300" alt="RStudio logo flat" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/RStudio_logo_flat.svg/512px-RStudio_logo_flat.svg.png"></a>
+<a title="RStudio, Inc., Public domain, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:RStudio_logo_flat.svg"><img width="330" alt="RStudio logo flat" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/RStudio_logo_flat.svg/330px-RStudio_logo_flat.svg.png"></a>
+
 
 <a href="https://commons.wikimedia.org/wiki/File:RStudio_logo_flat.svg">RStudio, Inc.</a>, Public domain, via Wikimedia Commons
 
@@ -213,7 +212,19 @@ How to Create a New Quarto Document
 ![](img/10.png)
 
 
-## Creating An Object
+##
+#### Run the Code Chunk
+
+![](img/11.png)
+
+
+##
+#### Run the Code Chunk
+
+![](img/12.png)
+
+## 
+### What Was That? - Creating An Object
 
 ::: {style="text-align: left; font-size: 28px"}
 
@@ -241,19 +252,6 @@ my_birthyear
 ```
 
 :::
-
-##
-#### Run the Code Chunk
-
-![](img/11.png)
-
-
-##
-#### Run the Code Chunk
-
-![](img/12.png)
-
-
 
 ## 
 ####  Say, Hello World!
@@ -331,7 +329,7 @@ R **ignores** comments if you put **#** like above
 
 ::: {style="font-size: 30px"}
 
-Open your terminal pane and type the following:
+Open your terminal pane and type the following and press Enter:
 
 
 ```{r}
@@ -351,13 +349,17 @@ quarto install tinytex
 
 ## Rendering a PDF Document
 
-![](img/image-10.png){fig-align="center"}
-
-## Rendering a PDF Document
-
 ![](img/14.png){fig-align="center"}
 
-## Rendering a PDF Document
+## 
+### Rendering a PDF Document
+<br>  
+
+::: {style="font-size: 28px"}
+
+If you see this PDF file, you are all set!
+
+:::
 
 ![](img/15.png){fig-align="center"}
 
@@ -366,7 +368,7 @@ quarto install tinytex
 
 - Please upload this PDF document to our Canvas page as __LAB Assignment 1 (Individual)__  
  
-- Begining from next week, we will start working in groups. 
+- Begining from this Friday, we will start working in groups. 
 
 ## CONGRATULATIONS
 
