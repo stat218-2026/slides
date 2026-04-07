@@ -105,6 +105,25 @@ Quarto is...
 
 # Today's Tasks 
 
+##
+### Task 0: Let RStudio Do Things
+
+<br>
+
+If you are using Mac,
+
+- Find privacy and security in your settings
+- Then go to Files and Folders
+- You will see RStudio over there
+- Make sure to enable RStudio to reach out your desktop folder.
+
+##
+### Task 0: Click "Install"
+
+![](img/rmarkdown.png)
+
+
+
 ## 
 ### Task 1: Create A Folder
 
