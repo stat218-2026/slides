@@ -141,13 +141,13 @@
 <div style="font-size: 30px">
 <p>Until now, we have:</p>
 <ul>
-<li>identified the differences between anecdotal and empirical evidence<br>
+<li class="fragment">identified the differences between anecdotal and empirical evidence<br>
 </li>
-<li>discussed the differences between observational and experimental studies</li>
+<li class="fragment">discussed the differences between observational and experimental studies</li>
 </ul>
 <p>And OF COURSE</p>
 <ul>
-<li>We took our first steps in RStudio!</li>
+<li class="fragment">We took our first steps in RStudio!</li>
 </ul>
 </div>
 </section>
@@ -156,17 +156,17 @@
 <h3 id="what-about-today">What about Today?</h3>
 <p>Today we will:</p>
 <ul>
-<li>have an introduction to descriptive statistics
+<li class="fragment">have an introduction to descriptive statistics
 <ul>
-<li>the principles of data visualization (<em>will continue next week with R</em>)<br>
+<li class="fragment">the principles of data visualization (<em>will continue next week with R</em>)<br>
 </li>
-<li>see examples of frequency distributions enabling us to summarize <strong>a categorical variable</strong> or <strong>a quantitative variable</strong>
+<li class="fragment">see examples of frequency distributions enabling us to summarize <strong>a categorical variable</strong> or <strong>a quantitative variable</strong>
 <ul>
-<li>either as a table or a graph<br>
+<li class="fragment">either as a table or a graph<br>
 </li>
 </ul></li>
 </ul></li>
-<li>see how to identify/compute shape, center, and dispersion of a quantitative variable.</li>
+<li class="fragment">see how to identify/compute shape, center, and dispersion of a quantitative variable.</li>
 </ul>
 </section>
 <section id="section-2" class="slide level2">
@@ -175,11 +175,11 @@
 <p><br></p>
 <p>Data sets can be messy and overwhelming at first glance. By using descriptive statistics, we can:</p>
 <ul>
-<li>Visualize to reveal patterns,<br>
+<li class="fragment">Visualize to reveal patterns,<br>
 </li>
-<li>Summarize key information, and<br>
+<li class="fragment">Summarize key information, and<br>
 </li>
-<li>Organize data for better understanding.</li>
+<li class="fragment">Organize data for better understanding.</li>
 </ul>
 </section>
 <section>
@@ -191,15 +191,15 @@
 <h2>Introduction</h2>
 <p><br></p>
 <ul>
-<li><p>One way of representing data (graphical)</p>
+<li class="fragment"><p>One way of representing data (graphical)</p>
 <ul>
-<li>Other ways are data sonification and data in tactile format.</li>
+<li class="fragment">Other ways are data sonification and data in tactile format.</li>
 </ul></li>
-<li><p>Infographics, charts, plots and even maps are examples of visualizing data.</p>
+<li class="fragment"><p>Infographics, charts, plots and even maps are examples of visualizing data.</p>
 <ul>
-<li>In this class, we will use the coordinate system, different colors, and shapes to visualize data.</li>
+<li class="fragment">In this class, we will use the coordinate system, different colors, and shapes to visualize data.</li>
 </ul></li>
-<li><p>They can tell a story or help explain/explore data.</p></li>
+<li class="fragment"><p>They can tell a story or help explain/explore data.</p></li>
 </ul>
 </section>
 <section id="section-3" class="slide level2">
@@ -207,15 +207,15 @@
 <h3 id="a-successful-data-visualization">A Successful Data Visualization…</h3>
 <p>According to <a href="https://royal-statistical-society.github.io/datavisguide/docs/why-visualise.html">Royal Statistical Society</a>, a successful data visualization will:</p>
 <ul>
-<li>Grab attention<br>
+<li class="fragment">Grab attention<br>
 </li>
-<li>Improve access to information<br>
+<li class="fragment">Improve access to information<br>
 </li>
-<li>Increase precision<br>
+<li class="fragment">Increase precision<br>
 </li>
-<li>Bolster credibility<br>
+<li class="fragment">Bolster credibility<br>
 </li>
-<li>Summarise content</li>
+<li class="fragment">Summarise content</li>
 </ul>
 </section>
 <section id="section-4" class="slide level2">
@@ -232,13 +232,13 @@
 <h2></h2>
 <h3 id="further-resources">Further Resources</h3>
 <ul>
-<li><p><a href="https://nrennie.rbind.io/blog/five-ways-improve-chart-axes/">Five ways to improve your chart axes</a></p></li>
-<li><p><a href="https://royal-statistical-society.github.io/datavisguide/docs/">Royal Statistical Society - Best Practices for Data Visualisation</a></p></li>
-<li><p><a href="https://guides.lib.uci.edu/datavis/do">Top Ten Dos and Don’ts for Charts and Graphs</a></p></li>
-<li><p><a href="https://www.color-blindness.com/coblis-color-blindness-simulator/">Color Blindness Simulator</a></p>
+<li class="fragment"><p><a href="https://nrennie.rbind.io/blog/five-ways-improve-chart-axes/">Five ways to improve your chart axes</a></p></li>
+<li class="fragment"><p><a href="https://royal-statistical-society.github.io/datavisguide/docs/">Royal Statistical Society - Best Practices for Data Visualisation</a></p></li>
+<li class="fragment"><p><a href="https://guides.lib.uci.edu/datavis/do">Top Ten Dos and Don’ts for Charts and Graphs</a></p></li>
+<li class="fragment"><p><a href="https://www.color-blindness.com/coblis-color-blindness-simulator/">Color Blindness Simulator</a></p>
 <ul>
-<li>We will only touch the surface of data visualization in this course. It is a rich field.</li>
-<li>We will learn more about how to create data visualizations in R classes.</li>
+<li class="fragment">We will only touch the surface of data visualization in this course. It is a rich field.</li>
+<li class="fragment">We will learn more about how to create data visualizations in R classes.</li>
 </ul></li>
 </ul>
 </section></section>
@@ -253,18 +253,18 @@
 <div class="column" style="width:50%;">
 <div style="text-align: center; font-size: 30px">
 <ul>
-<li><p>We’d like to know about an entire collection of individuals, called a <strong>population</strong>, but examining all of them is usually impractical, if not impossible. (e.g., all students in Cal Poly)</p></li>
-<li><p>So we select a smaller group of individuals, a <strong>sample</strong>, from the population.</p>
+<li class="fragment"><p>We’d like to know about an entire collection of individuals, called a <strong>population</strong>, but examining all of them is usually impractical, if not impossible. (e.g., all students in Cal Poly)</p></li>
+<li class="fragment"><p>So we select a smaller group of individuals, a <strong>sample</strong>, from the population.</p>
 <ul>
-<li><strong>e.g.</strong> 1500 (<em>n</em> = 1500) students in Cal Poly.</li>
+<li class="fragment"><strong>e.g.</strong> 1500 (<em>n</em> = 1500) students in Cal Poly.</li>
 </ul></li>
 </ul>
 </div>
 </div><div class="column" style="width:50%;">
 <div style="text-align: center; font-size: 28px">
 <ul>
-<li><p>A subset of a larger population that accurately reflects the characteristics of the whole group is said to be <em>representative sample</em>.</p></li>
-<li><p>To make the sample as representative as possible, select individuals for the sample by employing randomness.</p></li>
+<li class="fragment"><p>A subset of a larger population that accurately reflects the characteristics of the whole group is said to be <em>representative sample</em>.</p></li>
+<li class="fragment"><p>To make the sample as representative as possible, select individuals for the sample by employing randomness.</p></li>
 </ul>
 <p><img data-src="img/population-sample.jpg"></p>
 </div>
@@ -291,8 +291,8 @@
 <section id="introduction-1" class="slide level2">
 <h2>Introduction</h2>
 <ul>
-<li>A <strong>frequency distribution</strong> is a representation of the frequency, indicating how often each value appears in a data set.</li>
-<li>This information can be conveyed through tables or, more visually, using a graph.</li>
+<li class="fragment">A <strong>frequency distribution</strong> is a representation of the frequency, indicating how often each value appears in a data set.</li>
+<li class="fragment">This information can be conveyed through tables or, more visually, using a graph.</li>
 </ul>
 </section></section>
 <section>
@@ -424,14 +424,14 @@
 <h2>Histogram</h2>
 <div style="font-size: 30px">
 <ul>
-<li><p>A visual summary of a quantitative variable.</p>
+<li class="fragment"><p>A visual summary of a quantitative variable.</p>
 <ul>
-<li>The x-axis represents the range of values divided into bins,<br>
+<li class="fragment">The x-axis represents the range of values divided into bins,<br>
 </li>
-<li>The y-axis represents the count of data points in each bin.</li>
+<li class="fragment">The y-axis represents the count of data points in each bin.</li>
 </ul></li>
-<li><p>Histograms help identify shape of the distribution, outliers, central tendency, and variability.</p></li>
-<li><p><strong>No Gaps between Bars:</strong> Unlike a bar chart, there are no gaps between the bars in a histogram because the bins are continuous.</p></li>
+<li class="fragment"><p>Histograms help identify shape of the distribution, outliers, central tendency, and variability.</p></li>
+<li class="fragment"><p><strong>No Gaps between Bars:</strong> Unlike a bar chart, there are no gaps between the bars in a histogram because the bins are continuous.</p></li>
 </ul>
 </div>
 </section>
@@ -473,17 +473,17 @@
 <h2>Measures of Center</h2>
 <p>To understand the <strong>center</strong> or <strong>typical value</strong> of a data set, we calculate</p>
 <ul>
-<li>Mean OR</li>
-<li>Median</li>
+<li class="fragment">Mean OR</li>
+<li class="fragment">Median</li>
 </ul>
 </section>
 <section id="mean" class="slide level2">
 <h2>Mean</h2>
 <div style="font-size: 28px">
 <ul>
-<li>You might be familiar with this term. It is also known as
+<li class="fragment">You might be familiar with this term. It is also known as
 <ul>
-<li>arithmetic mean OR sample mean</li>
+<li class="fragment">arithmetic mean OR sample mean</li>
 </ul></li>
 </ul>
 <div class="fragment">
@@ -498,13 +498,13 @@
 <div class="callout-content">
 <p>We employed a symbolic convention to differentiate between a <strong>variable</strong> and an <strong>observed value</strong> of that variable.</p>
 <ul>
-<li><span class="math inline">\(Y = birthweight\)</span> (<strong>Variable</strong>)</li>
-<li><span class="math inline">\(y = 12.8\)</span> lb (<strong>Observed Value</strong>)</li>
+<li class="fragment"><span class="math inline">\(Y = birthweight\)</span> (<strong>Variable</strong>)</li>
+<li class="fragment"><span class="math inline">\(y = 12.8\)</span> lb (<strong>Observed Value</strong>)</li>
 </ul>
 <p>We now denote</p>
 <ul>
-<li>the observations in a sample by <span class="math inline">\(y_1\)</span>, <span class="math inline">\(y_2\)</span>, . . . , <span class="math inline">\(y_n\)</span></li>
-<li>the mean of the sample by the symbol <span class="math inline">\(\bar{y}\)</span> (read “y-bar”).</li>
+<li class="fragment">the observations in a sample by <span class="math inline">\(y_1\)</span>, <span class="math inline">\(y_2\)</span>, . . . , <span class="math inline">\(y_n\)</span></li>
+<li class="fragment">the mean of the sample by the symbol <span class="math inline">\(\bar{y}\)</span> (read “y-bar”).</li>
 </ul>
 </div>
 </div>
@@ -521,11 +521,11 @@
 <h2>Median</h2>
 <div style="font-size: 28px">
 <ul>
-<li>Imagine what would happen if Bill Gates was in our class and we calculated the average money in our bank account.
+<li class="fragment">Imagine what would happen if Bill Gates was in our class and we calculated the average money in our bank account.
 <ul>
-<li>It might not be the best idea to interpret this average.</li>
+<li class="fragment">It might not be the best idea to interpret this average.</li>
 </ul></li>
-<li>Instead, we can calculate <em>median</em> which is a value that splits the <strong>ordered data</strong> into two equal parts.</li>
+<li class="fragment">Instead, we can calculate <em>median</em> which is a value that splits the <strong>ordered data</strong> into two equal parts.</li>
 </ul>
 </div>
 <div class="fragment">
@@ -533,22 +533,22 @@
 </div>
 <div style="font-size: 28px">
 <ul>
-<li>Arrange the observations in increasing order.</li>
-<li>In the array of ordered observations, the median is
+<li class="fragment">Arrange the observations in increasing order.</li>
+<li class="fragment">In the array of ordered observations, the median is
 <ul>
-<li>the middle value <strong>(if n is odd)</strong> or</li>
-<li>midway between the two middle values <strong>(if n is even)</strong>.</li>
+<li class="fragment">the middle value <strong>(if n is odd)</strong> or</li>
+<li class="fragment">midway between the two middle values <strong>(if n is even)</strong>.</li>
 </ul></li>
-<li>We denote the median of the sample by the symbol <span class="math inline">\(\tilde{y}\)</span> (read “y-tilde”).</li>
+<li class="fragment">We denote the median of the sample by the symbol <span class="math inline">\(\tilde{y}\)</span> (read “y-tilde”).</li>
 </ul>
 </div>
 </section>
 <section id="lets-have-another-toy-example" class="slide level2">
 <h2>Let’s have another toy example</h2>
 <ul>
-<li>Assume that we have a following dataset:
+<li class="fragment">Assume that we have a following dataset:
 <ul>
-<li>22, 6, 6, 4, 2</li>
+<li class="fragment">22, 6, 6, 4, 2</li>
 </ul></li>
 </ul>
 <div class="fragment">
@@ -579,7 +579,7 @@
 <h2></h2>
 <h3 id="understanding-mean-and-median">Understanding Mean and Median</h3>
 <ul>
-<li>Let’s see <a href="https://www.rossmanchance.com/applets/2021/descstats/Dotplot.htm">Rossman &amp; Chance Applet</a> to visualize <em>mean</em> and <em>median</em>.</li>
+<li class="fragment">Let’s see <a href="https://www.rossmanchance.com/applets/2021/descstats/Dotplot.htm">Rossman &amp; Chance Applet</a> to visualize <em>mean</em> and <em>median</em>.</li>
 </ul>
 </section>
 <section id="spread-of-distributions" class="slide level2">
@@ -595,7 +595,7 @@
 </div>
 <div class="fragment">
 <ul>
-<li>Why?</li>
+<li class="fragment">Why?</li>
 </ul>
 </div>
 </div>
