@@ -382,6 +382,22 @@ If you see this PDF file, you are all set!
 
 ![](img/15.png){fig-align="center"}
 
+##
+### Troubleshoot if not works
+
+<br>
+Paste this code to your Console
+
+```{r}
+#| eval: false
+#| echo: true
+#| 
+install.packages(c("rlang", "rmarkdown"), repos = "https://cloud.r-project.org")
+```
+
+![](img/troubleshoot.png){fig-align="center"}
+
+
 
 ## Lab Assignment 0
 
