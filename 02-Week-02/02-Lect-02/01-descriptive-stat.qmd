@@ -6,7 +6,6 @@ format:
       theme: simple
       slide-number: true
       chalkboard: true
-      incremental: true
 ---
 
 ## 
@@ -18,8 +17,6 @@ Until now, we have:
 
 - identified the differences between anecdotal and empirical evidence    
 - discussed the differences between observational and experimental studies 
-- defined the terms _population_ and _sample_
-- examined different types of (non)random sampling   
 
 And OF COURSE
 
@@ -112,6 +109,34 @@ According to [Royal Statistical Society](https://royal-statistical-society.githu
 
 
 # Vocabulary Before We Start
+
+## Population and Sample
+:::: {.columns}
+::: {.column width="50%"}
+::: {style="text-align: center; font-size: 30px"}
+
+- We’d like to know about an entire collection of individuals, called a __population__, but examining all of them is usually impractical, if not impossible. 
+  (e.g., all students in Cal Poly)
+
+- So we select a smaller group of individuals, a __sample__, from the population.
+  - **e.g.** 1500 (*n* = 1500) students in Cal Poly.
+
+:::
+:::
+
+::: {.column width="50%"}
+::: {style="text-align: center; font-size: 28px"}
+
+- A subset of a larger population that accurately reflects the characteristics of the whole group is said to be _representative sample_.
+
+- To make the sample as representative as possible, select individuals for the sample by employing randomness.
+
+
+![](img/population-sample.jpg)
+
+:::
+:::
+:::
 
 ## 
 ### Vocabulary Time!
