@@ -1,6 +1,5 @@
 ---
 title: "Inference for Means & Confidence Interval for µ"
-subtitle: "STAT 218 - Week 5, Lecture 2"
 format: 
   revealjs:
       theme: simple
@@ -190,7 +189,7 @@ Dunes region
 :::
 
 ::: {.column width="50%"}
-<a title="© Derek Ramsey / derekramsey.com" href="https://commons.wikimedia.org/wiki/File:Monarch_Butterfly_Showy_Male_3000px.jpg"><img width="1024" alt="Monarch Butterfly Showy Male 3000px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Monarch_Butterfly_Showy_Male_3000px.jpg/1024px-Monarch_Butterfly_Showy_Male_3000px.jpg"></a>
+<a title="© Derek Ramsey / derekramsey.com" href="https://commons.wikimedia.org/wiki/File:Monarch_Butterfly_Showy_Male_3000px.jpg"><img width="960" alt="Monarch Butterfly Showy Male 3000px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Monarch_Butterfly_Showy_Male_3000px.jpg/960px-Monarch_Butterfly_Showy_Male_3000px.jpg"></a>
 
 
 ::: fragment
@@ -245,7 +244,7 @@ $$
 :::
 
 ::: {.column width="50%"}
-<a title="© Derek Ramsey / derekramsey.com" href="https://commons.wikimedia.org/wiki/File:Monarch_Butterfly_Showy_Male_3000px.jpg"><img width="1024" alt="Monarch Butterfly Showy Male 3000px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Monarch_Butterfly_Showy_Male_3000px.jpg/1024px-Monarch_Butterfly_Showy_Male_3000px.jpg"></a>
+<a title="© Derek Ramsey / derekramsey.com" href="https://commons.wikimedia.org/wiki/File:Monarch_Butterfly_Showy_Male_3000px.jpg"><img width="960" alt="Monarch Butterfly Showy Male 3000px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Monarch_Butterfly_Showy_Male_3000px.jpg/960px-Monarch_Butterfly_Showy_Male_3000px.jpg"></a>
 
 :::fragment
 ::: {style="font-size: 24px"}
@@ -290,8 +289,7 @@ $$
 
 
 ::: {.column width="50%"}
-<a title="© Derek Ramsey / derekramsey.com" href="https://commons.wikimedia.org/wiki/File:Monarch_Butterfly_Showy_Male_3000px.jpg"><img width="1024" alt="Monarch Butterfly Showy Male 3000px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Monarch_Butterfly_Showy_Male_3000px.jpg/1024px-Monarch_Butterfly_Showy_Male_3000px.jpg"></a>
-
+<a title="© Derek Ramsey / derekramsey.com" href="https://commons.wikimedia.org/wiki/File:Monarch_Butterfly_Showy_Male_3000px.jpg"><img width="960" alt="Monarch Butterfly Showy Male 3000px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Monarch_Butterfly_Showy_Male_3000px.jpg/960px-Monarch_Butterfly_Showy_Male_3000px.jpg"></a>
 :::
 :::
 
@@ -412,7 +410,7 @@ $$
 
 ::: {.column width="50%"}
 ::: {style="font-size: 24px"}
-<a title="© Derek Ramsey / derekramsey.com" href="https://commons.wikimedia.org/wiki/File:Monarch_Butterfly_Showy_Male_3000px.jpg"><img width="1024" alt="Monarch Butterfly Showy Male 3000px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Monarch_Butterfly_Showy_Male_3000px.jpg/1024px-Monarch_Butterfly_Showy_Male_3000px.jpg"></a>
+<a title="© Derek Ramsey / derekramsey.com" href="https://commons.wikimedia.org/wiki/File:Monarch_Butterfly_Showy_Male_3000px.jpg"><img width="960" alt="Monarch Butterfly Showy Male 3000px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Monarch_Butterfly_Showy_Male_3000px.jpg/960px-Monarch_Butterfly_Showy_Male_3000px.jpg"></a>
 
 ::: fragment
 - You may wonder how a researcher would arrive at a value such as  $0.4 \ cm^2$ for the
