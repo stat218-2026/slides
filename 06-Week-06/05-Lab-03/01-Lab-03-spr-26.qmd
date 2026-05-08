@@ -1,0 +1,286 @@
+---
+title: "Ch. 6 & Ch. 7: Review of $t$-tests"
+subtitle: "STAT 218 - Week 6, Lecture 4 Lab 3"
+format: 
+  revealjs:
+      theme: simple
+      slide-number: true
+      chalkboard: true
+---
+
+
+# What Have We Learned So Far?
+
+## 
+### A Snapshot
+
+::: {style="font-size: 30px"}
+
+
+- **Inferential Statistics** makes predictions and draws conclusions about populations based on sample data.
+  - We saw different types of t-tests:
+    - __One sample t-test:__ compares a sample mean to a known or hypothesized population mean.
+    - __Independent samples t-test:__ compares means of two independent groups.
+    
+- We'll see these tests today.
+    
+
+:::
+
+
+# Hypothesis Testing Steps
+
+## 
+#### Introduction 
+
+:::{.callout-important}
+
+We can summarize hypothesis testing in four steps (if we use theory-based approach):
+
+1. Construct the Hypotheses of $H_0$ and $H_A$.
+2. Check the validity conditions/assumptions  
+3. Compute test statistic, find the _p_-value and confidence interval (Interpreting R Output)
+4. Draw conclusion.
+
+:::
+
+## 
+### To-do List Before Start - I
+::: {style="font-size: 26px"}
+- Assign your roles.
+  
+_Project Manager:_
+
+  - Follow the slides and give directions to the coder and note taker.
+  - Facilitate communication within the group and with the instructor.
+
+_Note Taker:_
+
+  - Take notes on key findings, insights, and interpretations derived from the data and analyses.
+
+_Coder:_
+
+  - Lead the coding efforts, writing and managing the R scripts.
+  - Ensure code quality, functionality, and documentation standards are met.
+
+:::
+
+## 
+### To-do List Before Start - II
+
+::: {style="font-size: 26px"}
+
+1. Download the assignment from course website (Lab Assignment 3).  
+
+2. Follow the instructions on this slideshow to complete the assignment.    
+
+:::
+
+
+
+
+
+# Setting the Scene
+
+## 
+### Downloading Necessary Packages 
+
+- To begin with, we need `infer` package to conduct _t_ tests. 
+- Let's run the code chunk in our lab assignment 3 file and load `infer` package by using `install.packages()` function.
+
+
+```{r}
+#| eval: false
+#| echo: true
+#| output: false
+install.packages("infer")
+```
+
+
+##
+### Running Library Functions and Loading Datasets
+
+
+After loading that package, let's run `library` functions and load the data set that we will use today.
+
+```{r}
+#| output: false
+#| echo: true
+library(tidyverse)
+library(infer)
+library(palmerpenguins)
+data("penguins") 
+```
+
+
+
+# One Sample $t$-test
+
+## 
+
+__Example of a Case:__ 
+
+Imagine that you are a biologist studying penguins, particularly their bill lengths. Previous studies have hypothesized that the population mean bill length of penguins is 40 mm. You collect a __random sample__ of 344 penguins and measure and record their bill lengths in millimeters.
+
+Perform a __one sample $t$-test__ to investigate whether the bill length of the penguins differs from the test value of 43 mm. 
+
+
+##
+### Instructions
+
+Open the assignment file and answer the following questions.
+
+<br>
+
+__Question 1. What is the research question of this study?__
+
+Type your answer in the assignment file.
+
+<br>
+
+__Question 2. What type of variable is used in this study?__
+
+Type your answer in the assignment file.
+
+
+## 
+### Assumptions - Validity Conditions
+::: {style="font-size: 28px"}
+
+- It is always important to check first whether the conditions are reasonable in a given case.
+
+- Here is the list of conditions that we should be aware of for one sample $t$-test.
+
+__1) Random Sampling:__ the data can be regarded as coming from independently chosen random sample,
+
+__2) Independence of Observations:__ the observations should be independent (One observation does not influence another.). If (1) You randomly sample individuals from a very large population, and (2) Each selection does not affect another, then observations are typically independent. 
+
+__3) Normality Assumption:__ You should have either symmetric (approximate normality) population distribution  
+OR   
+n > 30 (some references says 20) AND sample distribution not strongly skewed.
+
+:::
+
+## 
+### Normality Assumption - I
+::: {style="font-size: 28px"}
+
+- If the only source of information is the data at hand, then normality can be roughly checked.  
+
+  - Unfortunately, for a small or moderate sample size, this check is fairly rudimentary.
+  - If the sample is large, then the visual plots (histogram) give us good information; 
+    - However, if $n$ is large, the requirement of normality is less important anyway due to the Central Limit Theorem.
+- In any case, a rudimentary check is better than none, and every data analysis should begin with inspection of a graph of the data, with special attention to any observations that lie very far from the center of the distribution.
+
+:::
+
+
+## 
+#### Question 3. Checking the Normality Assumption
+
+<br>
+
+- Check your sample size first! 
+  - sample size is large, so we can check visual plots.
+- _Direction:_ Please create a histogram to check the normality.
+
+
+## 
+### Question 4. Interpreting the Output
+
+
+```{r}
+#| echo: true
+#| output: true
+t_test(penguins, response = bill_length_mm, mu = 43)
+```
+
+::: {style="font-size: 28px"}
+
+__Conclusion:__ _Type your hypothesis testing conclusion to your assignment file!_
+
+__Confidence Interval:__ _Type your confidence interval statement to your assignment file!_
+
+:::
+
+# Independent Samples $t$-test
+
+## 
+__Example of a Case:__ 
+
+Now, you're curious about the difference in the body mass of penguins based on their sex. You hypothesize that body mass varies between different sexes. To test your hypothesis, you collect a random sample of 344 penguins, measure their body mass, and record their sex.
+
+Perform an __independent samples $t$-test__ to investigate whether the body mass of penguins differs between different sexes.
+
+##
+### Instructions
+
+Continue with the assignment file and answer the following questions.
+
+__Question 1. What is the research question of this study?__
+
+Type your answer in the assignment file.
+
+__Question 2. What type of variable is used in this study?__
+
+Type your answer in the assignment file.
+
+## 
+### Assumptions - Validity Conditions
+::: {style="font-size: 28px"}
+
+- It is always important to check first whether the conditions are reasonable in a given case.
+
+- Here is the list of conditions that we should be aware of for independent samples $t$-test.
+
+__1) Random Sampling:__ the data can be regarded as coming from independently chosen random sample(s),
+
+__2) Independence of Observations:__ the observations should be independent (One observation does not influence another.).If (1) You randomly sample individuals from a very large population, and (2) Each selection does not affect another, then observations are typically independent. 
+
+__3) Normality Assumption:__ n > 20 __for each group__ AND sample distributions should not be strongly skewed.
+
+:::
+
+
+## 
+### Question 3. Checking the Normality Assumption
+
+- Check your sample size first! 
+  - sample sizes are large, so we can check visual plots (e.g., histogram) for each group.
+  
+
+## 
+### Question 3. Creating Two Histograms for Normality
+
+```{r}
+#| echo: true
+#| output: true
+ggplot(data = na.omit(penguins),
+       aes(x = body_mass_g)) +
+  geom_histogram(binwidth = 100) +
+  facet_wrap(~sex)
+```
+
+## 
+### Question 4. Interpreting the Output
+
+
+```{r}
+#| echo: true
+#| output: true
+t_test(x = penguins, 
+       formula = body_mass_g ~ sex, 
+       order = c("male", "female"),
+       alternative = "two-sided",
+       conf_level = 0.90)
+```
+
+::: {style="font-size: 28px"}
+
+__Conclusion:__ _Type your hypothesis testing conclusion to your assignment file!_
+
+__Confidence Interval:__ _Type your confidence interval statement to your assignment file!_
+
+:::
+
+
