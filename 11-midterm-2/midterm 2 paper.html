@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.25">
+<meta name="generator" content="quarto-1.9.36">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -10,6 +10,9 @@
 
 <title>Midterm 2 Take Home Paper</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -62,15 +65,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="midterm 2 paper_files/libs/clipboard/clipboard.min.js"></script>
 <script src="midterm 2 paper_files/libs/quarto-html/quarto.js" type="module"></script>
 <script src="midterm 2 paper_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="midterm 2 paper_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="midterm 2 paper_files/libs/quarto-html/popper.min.js"></script>
 <script src="midterm 2 paper_files/libs/quarto-html/tippy.umd.min.js"></script>
 <script src="midterm 2 paper_files/libs/quarto-html/anchor.min.js"></script>
 <link href="midterm 2 paper_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="midterm 2 paper_files/libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="midterm 2 paper_files/libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="midterm 2 paper_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="midterm 2 paper_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="midterm 2 paper_files/libs/bootstrap/bootstrap-9e3ffae467580fdb927a41352e75a2e0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="midterm 2 paper_files/libs/bootstrap/bootstrap-efbb37e9afcc02144ebbc7afd12a776f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 
 
 </head>
@@ -89,7 +91,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#one-sample-t-test" id="toc-one-sample-t-test" class="nav-link" data-scroll-target="#one-sample-t-test">One Sample <em>t</em>-test</a></li>
   <li><a href="#independent-samples-t-test" id="toc-independent-samples-t-test" class="nav-link" data-scroll-target="#independent-samples-t-test">Independent Samples <em>t</em>-test</a></li>
   <li><a href="#paired-sample-t-test" id="toc-paired-sample-t-test" class="nav-link" data-scroll-target="#paired-sample-t-test">Paired Sample <em>t</em>-test</a></li>
-  <li><a href="#comparing-two-proportions" id="toc-comparing-two-proportions" class="nav-link" data-scroll-target="#comparing-two-proportions">Comparing Two Proportions</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -135,8 +136,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(<span class="st">"lego_population"</span>)</span>
 <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(<span class="st">"hsb2"</span>)</span>
 <span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(<span class="st">"fheights"</span>)</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(<span class="st">"exam_grades"</span>)</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(<span class="st">"biontech_adolescents"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(<span class="st">"exam_grades"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>To see the details related to these datasets, examine the links below. Use the <code>.txt</code> files when using the applets.</p>
 <ul>
@@ -147,7 +147,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><a href="https://www.openintro.org/data/index.php?data=hsb2">hsb2</a> - High School and Beyond Survey</li>
 <li><a href="https://www.openintro.org/data/index.php?data=fheights">fheights</a> - Female Heights</li>
 <li><a href="https://www.openintro.org/data/index.php?data=exam_grades">exam_grades</a></li>
-<li><a href="https://www.openintro.org/data/index.php?data=biontech_adolescents">biontech_adolescents</a></li>
 </ul>
 <section id="part-1-getting-to-know-your-dataset" class="level1">
 <h1>Part 1: Getting to Know Your Dataset</h1>
@@ -194,7 +193,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Interpret your output here.</p>
 <p><strong>Question 2.4: Write out the null and alternative hypotheses in words, in the context of this study.</strong></p>
 <p>Type your answer here.</p>
-<p><strong>Question 2.5: Compute the t-statistic and explain what you see in the output.</strong></p>
+<p><strong>Question 2.5: Compute the test statistic (standardized statistic) and explain what you see in the output.</strong></p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Type your code here</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
@@ -221,7 +220,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Interpret the assumptions and explain your reasoning.</p>
 <p><strong>Question 3.4: Write out the null and alternative hypotheses in words, in the context of this study.</strong></p>
 <p>Type your answer here.</p>
-<p><strong>Question 3.5: Compute the t-statistic and explain what you see in the output.</strong></p>
+<p><strong>Question 3.5: Compute the test statistic (standardized statistic) and explain what you see in the output.</strong></p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Type your code here</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
@@ -231,42 +230,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="paired-sample-t-test" class="level2">
 <h2 class="anchored" data-anchor-id="paired-sample-t-test">Paired Sample <em>t</em>-test</h2>
-<p><strong>Write a case study based on your dataset. Show your work.</strong></p>
-<p><strong>Question 4.1: What is the research question of this study?</strong></p>
-<p>Type your answer here.</p>
-<p><strong>Question 4.2: What type of variable do we have in this study?</strong></p>
-<p>Type your answer here.</p>
-<p><strong>Question 4.3: List the assumptions required for this test and check the assumption of normality for this study. Interpret the assumptions overall.</strong></p>
-<p>List and explain the assumptions here.</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Type your code here to check normality</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<p>Interpret the assumptions and explain your reasoning.</p>
-<p><strong>Question 4.4: Write out the null and alternative hypotheses in words, in the context of this study.</strong></p>
-<p>Type your answer here.</p>
-<p><strong>Question 4.5: Compute the t-statistic and explain what you see in the output.</strong></p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Type your code here</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<p>Type your answer here.</p>
-<p><strong>Question 4.6: Draw a conclusion and write a conclusion statement. Provide the context clearly.</strong></p>
-<p>Type your answer here.</p>
-</section>
-<section id="comparing-two-proportions" class="level2">
-<h2 class="anchored" data-anchor-id="comparing-two-proportions">Comparing Two Proportions</h2>
-<p>Is yawning contagious? Conventional wisdom says yes: when you see someone else yawn, you’re prone to feel sleepy and let out a yawn yourself.&nbsp; How many times have you caught yourself in this situation, or noticed it in someone else?&nbsp;But will this hypothesis withstand a scientific test?&nbsp; Will data support this claim?</p>
-<p>The folks at <em>MythBusters</em>, a popular television program on the Discovery Channel, investigated this issue by using a two-way mirror and a hidden camera. Fifty subjects sat in a booth, accompanied only by an experimental attendee. For some of the subjects, the attendee yawned (planting a yawn “seed”), while for other subjects the attendee did not yawn. The researchers decided in advance, with a random mechanism, which subjects would receive the yawn seed and which would not. As time passed, the researchers watched to see which subjects yawned.</p>
-<p>Use the <a href="https://www.rossmanchance.com/applets/2021/chisqshuffle/ChiSqShuffle.htm">applet</a> and select the dataset <strong>“Yawning”</strong>. Complete this part by using the applet.</p>
-<p><strong>Question 5.1: What is the research question of this study?</strong></p>
-<p>Type your answer here.</p>
-<p><strong>Question 5.2: What type of variable do we have in this study?</strong></p>
-<p>Type your answer here.</p>
-<p><strong>Question 5.3: Write out the null and alternative hypotheses in words, in the context of this study.</strong></p>
-<p>Type your answer here.</p>
-<p><strong>Question 5.4: Let’s use simulation-based approach to see if there is any association between these two variables. Report your simulation-based p value.</strong></p>
-<p>Type your answer here.</p>
-<p><strong>Question 5.6: Draw a conclusion and write a conclusion statement. Provide the context clearly.</strong></p>
-<p>Type your answer here.</p>
+<p>Use this <a href="https://docs.google.com/document/d/1czVPSWOyHPILGlRUvQObBGtjpKcIME5P/copy?usp=sharing&amp;ouid=107969602618040380602&amp;rtpof=true&amp;sd=true">document</a> and <a href="https://www.rossmanchance.com/applets/2021/matchedpairs/MatchedPairs.htm">Matched Pairs</a> and select the dataset <strong>“Run Distance”</strong>. Complete this part by using the applet and print that too.</p>
 </section>
 </section>
 

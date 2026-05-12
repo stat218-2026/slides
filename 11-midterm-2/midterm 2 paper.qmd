@@ -26,19 +26,17 @@ data("lego_population")
 data("hsb2")
 data("fheights")
 data("exam_grades")
-data("biontech_adolescents")
 ```
 
 To see the details related to these datasets, examine the links below. Use the `.txt` files when using the applets.
 
--   [yawn](https://www.openintro.org/data/index.php?data=yawn)
--   [possum](https://www.openintro.org/data/index.php?data=possum)
--   [lizard_run](https://www.openintro.org/data/index.php?data=lizard_run)
--   [lego_population](https://www.openintro.org/data/index.php?data=lego_population)
--   [hsb2](https://www.openintro.org/data/index.php?data=hsb2) - High School and Beyond Survey
--   [fheights](https://www.openintro.org/data/index.php?data=fheights) - Female Heights
--   [exam_grades](https://www.openintro.org/data/index.php?data=exam_grades)
--   [biontech_adolescents](https://www.openintro.org/data/index.php?data=biontech_adolescents)
+- [yawn](https://www.openintro.org/data/index.php?data=yawn)
+- [possum](https://www.openintro.org/data/index.php?data=possum)
+- [lizard_run](https://www.openintro.org/data/index.php?data=lizard_run)
+- [lego_population](https://www.openintro.org/data/index.php?data=lego_population)
+- [hsb2](https://www.openintro.org/data/index.php?data=hsb2) - High School and Beyond Survey
+- [fheights](https://www.openintro.org/data/index.php?data=fheights) - Female Heights
+- [exam_grades](https://www.openintro.org/data/index.php?data=exam_grades)
 
 # Part 1: Getting to Know Your Dataset
 
@@ -94,9 +92,9 @@ Type your answer here.
 
 **Question 2.3: List the assumptions required for this test and check the assumption of normality for this study. Interpret the assumptions overall.**
 
--   **Random Sampling:** Explain here.
--   **Independence of Observations:** Explain here.
--   **Normal Distribution:** Explain here.
+- **Random Sampling:** Explain here.
+- **Independence of Observations:** Explain here.
+- **Normal Distribution:** Explain here.
 
 ```{r}
 # Type your code here to check normality
@@ -108,7 +106,7 @@ Interpret your output here.
 
 Type your answer here.
 
-**Question 2.5: Compute the t-statistic and explain what you see in the output.**
+**Question 2.5: Compute the test statistic (standardized statistic) and explain what you see in the output.**
 
 ```{r}
 # Type your code here
@@ -134,9 +132,9 @@ Type your answer here.
 
 **Question 3.3: List the assumptions required for this test and check the assumption of normality for this study. Interpret the assumptions overall.**
 
--   **Random Sampling:** Explain here.
--   **Independence of Observations:** Explain here.
--   **Normal Distribution:** Explain here.
+- **Random Sampling:** Explain here.
+- **Independence of Observations:** Explain here.
+- **Normal Distribution:** Explain here.
 
 ```{r}
 # Type your code here to check normality
@@ -148,7 +146,7 @@ Interpret the assumptions and explain your reasoning.
 
 Type your answer here.
 
-**Question 3.5: Compute the t-statistic and explain what you see in the output.**
+**Question 3.5: Compute the test statistic (standardized statistic) and explain what you see in the output.**
 
 ```{r}
 # Type your code here
@@ -162,66 +160,4 @@ Type your answer here.
 
 ## Paired Sample *t*-test
 
-**Write a case study based on your dataset. Show your work.**
-
-**Question 4.1: What is the research question of this study?**
-
-Type your answer here.
-
-**Question 4.2: What type of variable do we have in this study?**
-
-Type your answer here.
-
-**Question 4.3: List the assumptions required for this test and check the assumption of normality for this study. Interpret the assumptions overall.**
-
-List and explain the assumptions here.
-
-```{r}
-# Type your code here to check normality
-```
-
-Interpret the assumptions and explain your reasoning.
-
-**Question 4.4: Write out the null and alternative hypotheses in words, in the context of this study.**
-
-Type your answer here.
-
-**Question 4.5: Compute the t-statistic and explain what you see in the output.**
-
-```{r}
-# Type your code here
-```
-
-Type your answer here.
-
-**Question 4.6: Draw a conclusion and write a conclusion statement. Provide the context clearly.**
-
-Type your answer here.
-
-## Comparing Two Proportions
-
-Is yawning contagious? Conventional wisdom says yes: when you see someone else yawn, you’re prone to feel sleepy and let out a yawn yourself.  How many times have you caught yourself in this situation, or noticed it in someone else? But will this hypothesis withstand a scientific test?  Will data support this claim?
-
-The folks at *MythBusters*, a popular television program on the Discovery Channel, investigated this issue by using a two-way mirror and a hidden camera. Fifty subjects sat in a booth, accompanied only by an experimental attendee. For some of the subjects, the attendee yawned (planting a yawn “seed”), while for other subjects the attendee did not yawn. The researchers decided in advance, with a random mechanism, which subjects would receive the yawn seed and which would not. As time passed, the researchers watched to see which subjects yawned.
-
-Use the [applet](https://www.rossmanchance.com/applets/2021/chisqshuffle/ChiSqShuffle.htm) and select the dataset **"Yawning"**. Complete this part by using the applet.
-
-**Question 5.1: What is the research question of this study?**
-
-Type your answer here.
-
-**Question 5.2: What type of variable do we have in this study?**
-
-Type your answer here.
-
-**Question 5.3: Write out the null and alternative hypotheses in words, in the context of this study.**
-
-Type your answer here.
-
-**Question 5.4: Let’s use simulation-based approach to see if there is any association between these two variables. Report your simulation-based p value.**
-
-Type your answer here.
-
-**Question 5.6: Draw a conclusion and write a conclusion statement. Provide the context clearly.**
-
-Type your answer here.
+Use this [document](https://docs.google.com/document/d/1czVPSWOyHPILGlRUvQObBGtjpKcIME5P/copy?usp=sharing&ouid=107969602618040380602&rtpof=true&sd=true) and [Matched Pairs](https://www.rossmanchance.com/applets/2021/matchedpairs/MatchedPairs.htm) and select the dataset **"Run Distance"**. Complete this part by using the applet and print that too.
