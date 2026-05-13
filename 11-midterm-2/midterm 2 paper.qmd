@@ -1,7 +1,11 @@
 ---
 title: "Midterm 2 Take Home Paper"
-author: "YOUR NAME"
-format: html
+author: 
+  - "Team Member 1: NAME HERE"
+  - "Team Member 2: NAME HERE"
+  - "Team Member 3: NAME HERE"
+  - "Team Member 4: NAME HERE"
+format: pdf
 editor: visual
 toc: true
 ---
