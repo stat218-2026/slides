@@ -146,7 +146,8 @@ Interpretation:
   - P-value < 0.001: Very strong evidence for nonnormality.
   - P-value < 0.01: Strong evidence for nonnormality.
   - P-value < 0.05: Moderate evidence for nonnormality.
-  - P-value > 0.10: Mild or weak evidence for nonnormality.  
+  - P-value < 0.10: Mild or weak evidence for nonnormality.
+  - P-value > 0.10: No evidence for nonnormality.  
 
 :::
   
